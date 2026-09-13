@@ -3,7 +3,7 @@ import logo from './assets/logo-text.png'
 const Footer = () => {
     return (
         <div className="container mx-auto pt-10 pb-8 border-t border-gray-200">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 xl:grid-cols-5 pb-12 border-b border-gray-200">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 xl:grid-cols-5 pb-12 border-b border-gray-200 max-sm:px-5">
                 <div className="col-span-1 sm:col-span-3 xl:col-span-2 space-y-2">
                     <img src={logo} alt="logo" />
                     <p className='text-[#64748B] text-sm'>Curated tools, technologies, and resources for developers building
@@ -40,7 +40,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='flex justify-between items-center pt-6'>
+            <div className='flex flex-col sm:flex-row max-sm:gap-3 justify-between items-center pt-6 max-sm:px-5'>
                 <p className='text-sm text-[#64748B]'>© 2026 Dev Stack. All rights reserved.</p>
                 <div className=' flex items-center gap-3 text-sm text-[#64748B]'>
                     <p><a href="#">Privacy</a></p>
