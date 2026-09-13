@@ -37,7 +37,9 @@ const AvailableTechCard = ({techData, selectedTech, setSelectedTech}) => {
     }
 
     return (
-        <div className="p-4 border-2 border-[#F1F5F9] rounded-xl relative flex flex-col gap-3">
+        <div className={`p-4 border-2  rounded-xl relative flex flex-col gap-3
+        ${isSelected ? `border-sky-400`: `border-[#F1F5F9]` }
+        `}>
             <div className="badge absolute top-4 right-4 border border-sky-200 rounded-full bg-sky-100 text-sky-500 bg-">{techData.badge}</div>
             <img className="size-10" src={techData.icon} alt="" />
             <h2 className="text-lg font-bold text-[#0F172A]">{techData.name}</h2>
@@ -48,7 +50,7 @@ const AvailableTechCard = ({techData, selectedTech, setSelectedTech}) => {
                 <p className="py-0.5 px-3 bg-gray-100 border border-gray-200 rounded-md">{techData.difficulty}</p>
                 <p className="flex items center gap-1"><FaStar className="text-yellow-400" />{techData.rating}</p>
             </div>
-            <button className= {`btn p-2 flex justify-center items-center cursor-pointer bg-[#0F172A] rounded-xl
+            <button className= {`btn p-2 flex justify-center items-center cursor-pointer bg-[#0F172A] rounded-xl border-2
             ${isSelected ? `bg-gray-200 text-gray-500` : `bg-[#0F172A] text-white`}
             `}
             onClick={()=>handleStackBtn(techData, selectedTech, setSelectedTech)}
