@@ -4,12 +4,3 @@
 *{
     font-family: "Plus Jakarta Sans", sans-serif;
 }
-
-.nav_links li a{
-    color: #475569;
-    font-weight: 500;
-}
-.nav_links li a:hover{
-    color: #DB2777;
-    
-}

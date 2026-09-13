@@ -1,3 +1,4 @@
+
 import { use } from "react";
 import AvailableTech from "./AvailableTech";
 import SelectedTech from "./SelectedTech";
@@ -10,6 +11,7 @@ const Technologies = ({techPromise,selectedTech,setSelectedTech}) => {
 
 
 
+
     return (
         <div className="container mx-auto mt-28 mb-20">
             <div className="max-sm:text-center">
@@ -19,7 +21,7 @@ const Technologies = ({techPromise,selectedTech,setSelectedTech}) => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-10">
                 <div className="col-span-1 sm:col-span-2 md:col-span-3">
-                   <AvailableTech techDatas={techDatas}  selectedTech={selectedTech} setSelectedTech={setSelectedTech}/>
+                   <AvailableTech techDatas={techDatas} selectedTech={selectedTech} setSelectedTech={setSelectedTech}/>
                 </div>
                 <div className="col-span-1 sm:col-span-3 lg:col-span-1">
                     <SelectedTech selectedTech={selectedTech} setSelectedTech={setSelectedTech} />

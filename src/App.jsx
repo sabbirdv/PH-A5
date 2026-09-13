@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import Technologies from './components/Technologies'
 import Hero from './Hero'
@@ -24,8 +24,10 @@ function App() {
     <>
       <Nav/>
       <Hero/>
-      <Technologies techPromise={techPromise} 
-      selectedTech={selectedTech} setSelectedTech={setSelectedTech}/>
+      <Suspense fallback={<h1 className='text-center text-4xl text-gray-500 font-semibold my-15'>Loading...</h1>}>
+        <Technologies techPromise={techPromise} 
+        selectedTech={selectedTech} setSelectedTech={setSelectedTech}/>
+      </Suspense>
       <Footer />
        
     </>

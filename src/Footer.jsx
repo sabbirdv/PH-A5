@@ -18,24 +18,24 @@ const Footer = () => {
                 <div className="col-span-1">
                     <ul className='flex flex-col gap-1 text-sm text-[#64748B]'>
                         <li className='uppercase font-semibold text-[#0F172A] mb-1'>Product</li>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Technologies</a></li>
-                        <li><a href="">Project</a></li>
+                        <li><a href="https://github.com/">Home</a></li>
+                        <li><a href="https://github.com/">Technologies</a></li>
+                        <li><a href="https://github.com/">Project</a></li>
                     </ul>
                 </div>
                 <div className="col-span-1">
                     <ul className='flex flex-col gap-1 text-sm text-[#64748B]'>
                         <li className='uppercase font-semibold text-[#0F172A] mb-1'>Company</li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">Careers</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
                     </ul>
                 </div>
                 <div className="col-span-1">
                     <ul className='flex flex-col gap-1 text-sm text-[#64748B]'>
                         <li className='uppercase font-semibold text-[#0F172A] mb-1'>Legal</li>
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
@@ -43,8 +43,8 @@ const Footer = () => {
             <div className='flex justify-between items-center pt-6'>
                 <p className='text-sm text-[#64748B]'>© 2026 Dev Stack. All rights reserved.</p>
                 <div className=' flex items-center gap-3 text-sm text-[#64748B]'>
-                    <p>Privacy</p>
-                    <p>Terms</p>
+                    <p><a href="#">Privacy</a></p>
+                    <p><a href="#">Terms</a></p>
                 </div>
             </div>
         </div>
