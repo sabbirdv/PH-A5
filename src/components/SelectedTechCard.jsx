@@ -1,10 +1,22 @@
 import { IoMdClose } from "react-icons/io";
+import {toast, Bounce } from 'react-toastify';
 
 
 const SelectedTechCard = ({tech, selectedTech, setSelectedTech}) => {
 
     const handleCloseBtn = (tech, selectedTech, setSelectedTech)=>{
         setSelectedTech(selectedTech.filter((item)=> item != tech))
+
+        toast.info(`${tech.name} removed from stack`, {
+            position: "bottom-right",
+            autoClose: 1500,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            theme: "light",
+            transition: Bounce,
+        });
 
     }
 

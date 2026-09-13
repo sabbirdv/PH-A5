@@ -146,7 +146,7 @@
     "description": "A distributed version control system for tracking changes and collaborating on software projects.",
     "icon": "https://icon.icepanel.io/Technology/svg/Git.svg",
     "rating": 4.9,
-    "difficulty": "Beginner-Friendly",
+    "difficulty": "Beginner",
     "badge": "Essential"
   }
 ]

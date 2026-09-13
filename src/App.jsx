@@ -3,6 +3,7 @@ import './App.css'
 import Technologies from './components/Technologies'
 import Hero from './Hero'
 import Nav from './Nav'
+import Footer from './Footer'
 
 
 const techFetch = async ()=>{
@@ -24,8 +25,9 @@ function App() {
       <Nav/>
       <Hero/>
       <Technologies techPromise={techPromise} 
-      selectedTech={selectedTech} setSelectedTech={setSelectedTech}
-       />
+      selectedTech={selectedTech} setSelectedTech={setSelectedTech}/>
+      <Footer />
+       
     </>
   )
 }

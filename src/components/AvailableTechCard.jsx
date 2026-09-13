@@ -5,13 +5,14 @@ import {toast, Bounce } from 'react-toastify';
 
 const AvailableTechCard = ({techData, selectedTech, setSelectedTech}) => {
 
+    
     const [isSelected, setIsSelected] = useState(false)
-
     const handleStackBtn = (techData, selectedTech, setSelectedTech)=>{
 
         setIsSelected(true)
         setSelectedTech([...selectedTech,techData])
-            toast.success(`${techData.name} adden in stack`, {
+
+        toast.success(`${techData.name} adden in stack`, {
             position: "bottom-right",
             autoClose: 1500,
             hideProgressBar: false,
