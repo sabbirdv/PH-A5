@@ -41,7 +41,7 @@ const Footer = () => {
             </div>
 
             <div className='flex flex-col sm:flex-row max-sm:gap-3 justify-between items-center pt-6 max-sm:px-5'>
-                <p className='text-sm text-[#64748B]'>© 2026 Dev Stack. All rights reserved.</p>
+                <p className='text-sm text-[#64748B]'>© 2026 Dev Stack. All rights reserved [PH B14 A5].</p>
                 <div className=' flex items-center gap-3 text-sm text-[#64748B]'>
                     <p><a href="#">Privacy</a></p>
                     <p><a href="#">Terms</a></p>
